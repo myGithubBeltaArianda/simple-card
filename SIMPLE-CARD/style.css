@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    box-shadow: 0 10px 15px rgba(181, 181, 181, .7);
+    background: #fff;
+}
+
+.product-img {
+    width: 300px;
+    height: 230px;
+    background: url("https://id.360buyimg.com/Indonesia/s880x0_/nHBfsgAArgAAAAEAFoyzxQABEhw.jpg.dpg.webp") 300px/ cover;
+}
+
+.product-detail {
+    width: 300px;
+    height: 220px;
+    background: #21222d;
+    border-radius: 0 40% 0 0;
+    padding: .8rem;
+    font-family: 'poppins', 'sans-serif';
+    color: #fff;
+}
+
+.rating {
+    font-size: .7rem;
+    color: #fdcc0d;
+}
+
+.product-detail p {
+    font-size: .8rem;
+    color: #5f5f6b;
+}
+
+.buttons {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.btn {
+    position: relative;
+    border: none;
+    outline: none;
+    background: #35353f;
+    color: #fff;
+    height: 40px;
+    border-radius: 50px;
+    font-size: .9rem;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.cart {
+    width: 200px;
+}
+
+.bookmark {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #35353f;
+    height: 45px;
+    transition: .3s;
+}
+
+.cart::before {
+    width: 205px;
+    border-radius: 60px;
+}
+
+.btn:hover:before {
+    border-color: #fff;
+}
+
+.bookmark::before {
+    width: 45px;
+    border-radius: 50%;
+}
